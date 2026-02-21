@@ -1,8 +1,8 @@
 /**
  * 02. Sealed Classes & Sealed Interfaces
  *
- * 기존 (2021 이전): Sealed Classes만 사용 가능, 같은 파일에 모든 서브클래스 필요
- * 새로운 방식 (1.5+): Sealed Interfaces 추가, 같은 패키지면 다른 파일도 가능
+ * 기존 (1.4 이하): Sealed class만 사용 가능, 같은 파일에 모든 서브클래스 필요
+ * 새로운 방식 (1.5+): Sealed class/interface 모두 같은 패키지(같은 모듈) 내 다른 파일 허용
  */
 
 fun main() {
@@ -50,6 +50,7 @@ println("--- 새로운 방식: Sealed Interfaces ---")
 
 // Sealed interface는 더 유연한 계층 구조 가능
 // 장점: 여러 sealed interface 구현 가능
+// 참고: sealed class도 1.5+부터 같은 패키지 내 다른 파일 허용
 sealed interface UiState
 
 sealed interface LoadingState : UiState {

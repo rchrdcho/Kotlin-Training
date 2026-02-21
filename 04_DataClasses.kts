@@ -152,6 +152,7 @@ fun copyVisibilityExample() {
 fun immutableDomainExample() {
     println("--- 실전 예제: Immutable 도메인 모델 ---")
 
+    // 학습용: 실무에서는 부동소수점 오차 때문에 Long(센트) 또는 BigDecimal 사용 권장
     data class Money(val amount: Double, val currency: String = "USD") {
         init {
             require(amount >= 0) { "Amount cannot be negative" }

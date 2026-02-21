@@ -40,6 +40,7 @@
 ### 01. 기본 문법 복습
 - `01_Basics.kts`
 - 변수, 함수, 클래스, Null Safety
+- Java 관점의 핵심 차이 포함
 - Kotlin의 핵심 문법 빠른 복습
 
 ### 02. Sealed Types
@@ -97,6 +98,7 @@ kotlin 04_DataClasses.kts
 ```
 
 2021년 이후 추가된 새로운 기능들을 "기존 방식 vs 새로운 방식" 비교를 통해 학습합니다.
+Kotlin 2.1+ 환경이라면 `03_WhenExpressions.kts`의 Guard conditions 예제 주석을 해제해 비교해 보세요.
 
 ### 3단계: 고급 기능 (1-2시간)
 ```bash

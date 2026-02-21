@@ -193,6 +193,7 @@ fun delegatedPropertiesExample() {
     println()
 
     // observable: 값이 변경될 때 콜백 실행
+    // 실무에서는 kotlin.properties.Delegates.observable 사용이 일반적
     class User {
         var name: String by observable("Unknown") { property, oldValue, newValue ->
             println("  ${property.name} changed from '$oldValue' to '$newValue'")
@@ -206,6 +207,7 @@ fun delegatedPropertiesExample() {
     println()
 
     // vetoable: 값 변경을 검증
+    // 실무에서는 kotlin.properties.Delegates.vetoable 사용이 일반적
     class Product {
         var price: Double by vetoable(0.0) { _, oldValue, newValue ->
             if (newValue < 0) {
@@ -248,7 +250,7 @@ fun delegatedPropertiesExample() {
     config.timeout = 60
 }
 
-// Helper function for observable
+// Helper function for observable (학습용 단순 구현)
 private fun <T> observable(
     initialValue: T,
     onChange: (property: kotlin.reflect.KProperty<*>, oldValue: T, newValue: T) -> Unit
@@ -266,7 +268,7 @@ private fun <T> observable(
     }
 }
 
-// Helper function for vetoable
+// Helper function for vetoable (학습용 단순 구현)
 private fun <T> vetoable(
     initialValue: T,
     onChange: (property: kotlin.reflect.KProperty<*>, oldValue: T, newValue: T) -> Boolean

@@ -20,7 +20,7 @@ fun main() {
 fun basicCollectionsExample() {
     println("--- 기본 컬렉션 ---")
 
-    // List (불변)
+    // List (읽기 전용)
     val numbers = listOf(1, 2, 3, 4, 5)
     val mutableNumbers = mutableListOf(1, 2, 3)
     mutableNumbers.add(4)
@@ -73,10 +73,10 @@ fun transformationsExample() {
     println("Ages 30+: $ages")
 
     // flatMap: 중첩된 컬렉션을 평탄화
-    val nameLengths = users.flatMap { user ->
-        user.name.split("").filter { it.isNotEmpty() }
+    val nameChars = users.flatMap { user ->
+        user.name.toList()
     }
-    println("All characters: ${nameLengths.take(10)}...")
+    println("All characters: ${nameChars.take(10)}...")
 
     // associate: Map 생성
     val nameToAge = users.associate { it.name to it.age }
