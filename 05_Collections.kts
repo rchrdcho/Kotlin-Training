@@ -218,3 +218,5 @@ fun sequencesExample() {
 
     println("First 10 even squares: $largeData")
 }
+
+main()

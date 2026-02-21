@@ -159,3 +159,5 @@ fun bestPracticeExample() {
         println(getPaymentMessage(payment))
     }
 }
+
+main()

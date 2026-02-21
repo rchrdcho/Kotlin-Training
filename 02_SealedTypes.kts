@@ -129,3 +129,5 @@ fun processApiResponse() {
         ApiResponse.Loading -> println("로딩 중...")
     }
 }
+
+main()

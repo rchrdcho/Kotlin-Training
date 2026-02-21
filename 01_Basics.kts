@@ -112,3 +112,5 @@ fun nullSafetyExample() {
 
     println()
 }
+
+main()

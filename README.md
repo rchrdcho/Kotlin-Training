@@ -38,70 +38,71 @@
 ## 학습 자료 구성
 
 ### 01. 기본 문법 복습
-- `01_Basics.kt`
+- `01_Basics.kts`
 - 변수, 함수, 클래스, Null Safety
 - Kotlin의 핵심 문법 빠른 복습
 
 ### 02. Sealed Types
-- `02_SealedTypes.kt`
+- `02_SealedTypes.kts`
 - 기존: Sealed Classes만 사용
 - 새로운: Sealed Interfaces로 더 유연한 계층 구조
 - 실전 예제: API 응답 모델링
 
 ### 03. When Expressions
-- `03_WhenExpressions.kt`
+- `03_WhenExpressions.kts`
 - 기존: 중첩된 if-else 또는 복잡한 when
 - 새로운: Guard conditions (Kotlin 2.1+)
 - 패턴 매칭 스타일 개선
 
 ### 04. Data Classes
-- `04_DataClasses.kt`
+- `04_DataClasses.kts`
 - Data class 기본 기능 복습
 - Copy function visibility 개선 (Kotlin 2.0+)
 - Immutable 도메인 모델 예제
 
 ### 05. Collections & Functional Programming
-- `05_Collections.kt`
+- `05_Collections.kts`
 - 컬렉션 API 완벽 정리
 - 변환, 필터링, 집계 함수
 - Sequences를 통한 지연 평가
 
 ### 06. 확장 함수와 위임
-- `06_ExtensionsAndDelegation.kt`
+- `06_ExtensionsAndDelegation.kts`
 - 확장 함수/프로퍼티로 기능 추가
 - 위임 패턴 (by 키워드)
 - 위임 프로퍼티 (lazy, observable, vetoable)
 
 ### 07. 스코프 함수와 고차 함수
-- `07_ScopeAndHigherOrder.kt`
+- `07_ScopeAndHigherOrder.kts`
 - let, run, with, apply, also 완벽 정리
 - 고차 함수와 함수형 프로그래밍
 - 실전 예제: 전략 패턴
 
 ## 학습 방법
+각 파일은 `.kts` 스크립트이며, 파일 끝에서 `main()`을 호출하도록 되어 있어 바로 실행 가능합니다.
 
 ### 1단계: 기본 복습 (30분)
 ```bash
 # Kotlin이 설치되어 있다면:
-kotlin 01_Basics.kt
+kotlin 01_Basics.kts
 ```
 
 기본 문법을 빠르게 복습합니다. 변수, 함수, 클래스 등 핵심 개념을 상기시킵니다.
 
 ### 2단계: 새로운 기능 학습 (1-2시간)
 ```bash
-kotlin 02_SealedTypes.kt
-kotlin 03_WhenExpressions.kt
-kotlin 04_DataClasses.kt
+kotlin 02_SealedTypes.kts
+kotlin 03_WhenExpressions.kts
+kotlin 04_DataClasses.kts
 ```
 
 2021년 이후 추가된 새로운 기능들을 "기존 방식 vs 새로운 방식" 비교를 통해 학습합니다.
 
 ### 3단계: 고급 기능 (1-2시간)
 ```bash
-kotlin 05_Collections.kt
-kotlin 06_ExtensionsAndDelegation.kt
-kotlin 07_ScopeAndHigherOrder.kt
+kotlin 05_Collections.kts
+kotlin 06_ExtensionsAndDelegation.kts
+kotlin 07_ScopeAndHigherOrder.kts
 ```
 
 Kotlin의 강력한 기능들을 실전 예제와 함께 학습합니다.

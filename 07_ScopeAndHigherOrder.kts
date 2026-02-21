@@ -276,3 +276,5 @@ fun higherOrderFunctionsExample() {
     }
     println("Sum: $sum, Time: ${elapsed}ms")
 }
+
+main()

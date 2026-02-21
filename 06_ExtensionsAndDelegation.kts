@@ -284,3 +284,5 @@ private fun <T> vetoable(
         }
     }
 }
+
+main()

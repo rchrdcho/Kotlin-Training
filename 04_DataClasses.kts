@@ -221,3 +221,5 @@ fun immutableDomainExample() {
         println("  ${tx.type}: ${tx.amount}")
     }
 }
+
+main()
